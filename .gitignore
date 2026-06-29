@@ -1,0 +1,38 @@
+# ─── 构建产物（请勿提交，发布用 GitHub Releases）──────────
+build/
+dist/
+
+# ─── 本地游戏数据（与本项目无关，严禁提交）────────────────
+files/
+
+# ─── 仅本地使用、仓库不跟踪的 platform-tools 其他工具 ────
+/fastboot.exe
+/etc1tool.exe
+/hprof-conv.exe
+/make_f2fs.exe
+/make_f2fs_casefold.exe
+/mke2fs.exe
+/mke2fs.conf
+/sqlite3.exe
+
+# ─── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+.eggs/
+
+# ─── 打包临时文件 ─────────────────────────────────────────
+*.log
+*.tmp
+
+# ─── 编辑器 / IDE ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ─── 操作系统 ─────────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
