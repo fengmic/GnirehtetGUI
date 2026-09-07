@@ -5,8 +5,12 @@
 <h1 align="center">Gnirehtet GUI</h1>
 
 <p align="center">
-  Android USB 反向网络共享工具 · 图形界面版<br/>
-  让手机通过电脑的 网络 上网（Reverse Tethering）
+  开源命令行工具 <a href="https://github.com/Genymobile/gnirehtet">gnirehtet</a> 的 Windows 图形界面版本<br/>
+  Android USB 反向网络共享（Reverse Tethering）· 让手机通过电脑的网络上网
+</p>
+
+<p align="center">
+  <a href="README.md">简体中文</a> · <a href="README_EN.md">English</a>
 </p>
 
 <p align="center">
@@ -16,11 +20,15 @@
   <img src="https://img.shields.io/badge/license-MIT-yellow" alt="license">
 </p>
 
+<p align="center">
+  <img src="img/screenshot.png" alt="Gnirehtet GUI 主界面" width="820">
+</p>
+
 ---
 
 ## 简介
 
-[Gnirehtet](https://github.com/Genymobile/gnirehtet) 是 Genymobile 出品的开源反向网络共享（Reverse Tethering）工具，但官方只提供命令行界面，对普通用户不够友好。本项目为它封装了一个 **Windows 图形界面**：
+[gnirehtet](https://github.com/Genymobile/gnirehtet) 是 Genymobile 出品的开源反向网络共享（Reverse Tethering）命令行工具，官方只提供命令行界面，对普通用户不够友好。**本项目是 gnirehtet 的图形界面（GUI）版本**，核心功能仍由原版 `gnirehtet.exe` 实现，本 GUI 只负责封装交互：
 
 - 无需记忆任何命令，点一个按钮即可开始共享
 - 自动检测并列出已连接的 Android 设备（每 5 秒刷新）
@@ -29,10 +37,6 @@
 - 退出前自动提醒，防止误断共享
 
 > 反向网络共享：与「手机开热点给电脑」相反——通过 USB 数据线，让 **手机使用电脑的网络** 上网。适合无 Wi-Fi / 无 SIM 卡流量场景下的调试、下载、刷机等需求。
-
-## 界面预览
-
-![Gnirehtet GUI 主界面](img/screenshot.png)
 
 ## 功能特性
 
@@ -92,6 +96,8 @@ python gnirehtet_gui.py
 ├── build_exe.ps1         # PyInstaller 打包脚本
 ├── GnirehtetGUI.spec     # PyInstaller 打包配置
 ├── requirements.txt      # Python 依赖
+├── README.md / README_EN.md  # 中 / 英文说明文档
+├── img/screenshot.png    # 界面截图
 ├── gnirehtet.exe / .apk  # 反向网络共享核心（Apache-2.0）
 ├── adb.exe 等            # Android platform-tools 组件（Apache-2.0）
 ├── icon.png / icon.ico   # 应用图标
@@ -111,7 +117,7 @@ python gnirehtet_gui.py
 
 ## 致谢
 
-- [Genymobile / gnirehtet](https://github.com/Genymobile/gnirehtet) — 反向网络共享核心工具（Apache-2.0）
+- [Genymobile / gnirehtet](https://github.com/Genymobile/gnirehtet) — 反向网络共享核心工具（Apache-2.0），本项目基于其官方二进制构建
 - [Android platform-tools](https://developer.android.com/tools/releases/platform-tools) — ADB 组件（Apache-2.0）
 - [PySide6 / Qt](https://www.qt.io/) — 图形界面框架
 

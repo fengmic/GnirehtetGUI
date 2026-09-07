@@ -36,3 +36,6 @@ venv/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# ─── WorkBuddy 本地数据 ──────────────────────────────────
+.workbuddy/
