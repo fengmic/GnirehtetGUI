@@ -52,8 +52,8 @@
 ### 方式二：从源码运行
 
 ```bash
-git clone https://github.com/fengmic/platform-tools.git
-cd platform-tools
+git clone https://github.com/fengmic/GnirehtetGUI.git
+cd GnirehtetGUI
 
 pip install -r requirements.txt
 python gnirehtet_gui.py
